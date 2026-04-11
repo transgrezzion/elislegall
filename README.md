@@ -89,3 +89,15 @@ The contents of this repository are for **informational and research purposes on
         <strong>Disclaimer:</strong> Eli's Legal Enterprise is a legal intelligence platform operated by a professional paralegal. We provide administrative support, document drafting, and research information. We do not provide legal advice or Advocate-level representation.
     </p>
 </section>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/[YOUR-UNIQUE-ID]/default'; // They give you this
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+</body>
