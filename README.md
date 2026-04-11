@@ -47,24 +47,37 @@ The contents of this repository are for **informational and research purposes on
 
     </div>
 </section>
-<section id="services" style="padding: 20px; font-family: sans-serif;">
-    <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Our Services</h2>
+<section id="services" style="max-width: 1050px; margin: 40px auto; padding: 30px; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f9f9f9; border-radius: 10px;">
+    
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="color: #1a2a6c; text-transform: uppercase; letter-spacing: 1px;">Support & Service Orders</h2>
+        <p style="color: #444; max-width: 700px; margin: 10px auto; line-height: 1.6;">
+            Use the details below to <strong>support the platform</strong> or to <strong>order for a legal document, research report, template, or specific forms</strong>. You can also reach out to ask for a certain specific service tailored to your needs.
+        </p>
+    </div>
 
-    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <div style="display: flex; gap: 25px; justify-content: center; flex-wrap: wrap;">
         
-        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 300px; box-shadow: 2px 2px 10px #eee;">
-            <h3>SCC Starter Pack</h3>
-            <p>Everything you need to initiate a claim in the Small Claims Court. Includes Plaint, Affidavit, and Filing Guide.</p>
-            <p><strong>KES 1,500</strong></p>
-            <button style="background: #27ae60; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Buy Now</button>
-        </div>
+        <div style="background: white; border: 1px solid #e0e0e0; border-top: 6px solid #b8860b; padding: 30px; border-radius: 8px; width: 100%; max-width: 500px; box-shadow: 0 6px 12px rgba(0,0,0,0.05); text-align: center;">
+            <h3 style="color: #1a2a6c; margin-top: 0;">M-PESA PAYMENT DETAILS</h3>
+            <div style="background: #e8f4fd; padding: 20px; border-radius: 5px; margin: 20px 0;">
+                <span style="display: block; font-size: 0.9em; color: #555; margin-bottom: 5px;">Send to Phone / Buy Goods:</span>
+                <span style="font-size: 1.8em; font-weight: bold; color: #1a2a6c; letter-spacing: 1px;">+254 790 004 418</span>
+            </div>
+            
+            <p style="font-size: 0.95em; color: #333; line-height: 1.5;">
+                After payment, please send the M-Pesa confirmation message along with your specific request (Template name, Research topic, or Service inquiry) via WhatsApp or SMS to the same number.
+            </p>
 
-        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 300px; box-shadow: 2px 2px 10px #eee;">
-            <h3>Precedent Research</h3>
-            <p>Request a customized report of Kenyan case law relevant to your specific dispute.</p>
-            <p><strong>From KES 3,000</strong></p>
-            <button style="background: #2980b9; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Request Report</button>
+            <div style="margin-top: 25px; display: flex; gap: 10px; justify-content: center;">
+                <a href="https://wa.me/254790004418" style="background: #25D366; color: white; text-decoration: none; padding: 12px 20px; border-radius: 5px; font-weight: bold; flex: 1;">WhatsApp Request</a>
+                <a href="tel:+254790004418" style="background: #1a2a6c; color: white; text-decoration: none; padding: 12px 20px; border-radius: 5px; font-weight: bold; flex: 1;">Call / SMS</a>
+            </div>
         </div>
 
     </div>
+
+    <p style="margin-top: 40px; font-size: 0.8em; color: #777; text-align: center; border-top: 1px solid #ddd; padding-top: 20px;">
+        <strong>Disclaimer:</strong> Eli's Legal Enterprise is a legal intelligence platform operated by a professional paralegal. We provide administrative support, document drafting, and research information. We do not provide legal advice or Advocate-level representation.
+    </p>
 </section>
