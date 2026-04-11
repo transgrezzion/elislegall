@@ -26,3 +26,24 @@ The contents of this repository are for **informational and research purposes on
 **Maintained by:** edwin / Eli's Legal Enterprise  
 **Location:** Kitengela, Kajiado County, Kenya  
 **Established:** 2026
+<section id="services" style="padding: 20px; font-family: sans-serif;">
+    <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Our Services</h2>
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        
+        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 300px; box-shadow: 2px 2px 10px #eee;">
+            <h3>SCC Starter Pack</h3>
+            <p>Everything you need to initiate a claim in the Small Claims Court. Includes Plaint, Affidavit, and Filing Guide.</p>
+            <p><strong>KES 1,500</strong></p>
+            <button style="background: #27ae60; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Buy Now</button>
+        </div>
+
+        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 300px; box-shadow: 2px 2px 10px #eee;">
+            <h3>Precedent Research</h3>
+            <p>Request a customized report of Kenyan case law relevant to your specific dispute.</p>
+            <p><strong>From KES 3,000</strong></p>
+            <button style="background: #2980b9; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Request Report</button>
+        </div>
+
+    </div>
+</section>
