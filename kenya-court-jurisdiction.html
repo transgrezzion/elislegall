@@ -63,3 +63,174 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli's Legal Enterprise | Intelligence & Consultancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #0F172A;
+            --accent-gold: #947436; /* Professional bronze/gold accent */
+            --bg-light: #FFFFFF;
+            --text-gray: #334155;
+            --border-color: #E2E8F0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Clean Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 10%;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-gray);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section - High Contrast */
+        .hero {
+            padding: 100px 10%;
+            background-color: var(--primary-navy);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #CBD5E1;
+        }
+
+        /* Service Cards - Minimalist */
+        .services-container {
+            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: var(--accent-gold);
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-gold);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 2px; /* Square edges look more formal */
+            transition: opacity 0.3s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #F8FAFC;
+            padding: 50px 10%;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Eli's Legal Enterprise</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Intelligence Services</a>
+        <a href="#portal">Document Portal</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Legal Intelligence. Refined.</h1>
+    <p>Strategic paralegal consultancy specializing in Kenyan Civil Litigation, Land Law, and Succession matters.</p>
+    <a href="#portal" class="cta-button">Access Document Portal</a>
+</section>
+
+<section class="services-container" id="services">
+    <div class="service-card">
+        <h3>Civil Litigation Support</h3>
+        <p>Specialized assistance in drafting plaints, affidavits, and submissions for the Small Claims and High Court.</p>
+    </div>
+    <div class="service-card">
+        <h3>Property & Land Law</h3>
+        <p>Expert guidance on the Land Registration Act and Environmental & Land Court procedures.</p>
+    </div>
+    <div class="service-card">
+        <h3>Corporate Intelligence</h3>
+        <p>Legal research briefs and compliance audits tailored for small-to-medium enterprises in Kenya.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Eli's Legal Enterprise. All Rights Reserved. <br> 
+    Professional Paralegal Consultancy - Not a Law Firm.</p>
+</footer>
+
+</body>
+</html>
