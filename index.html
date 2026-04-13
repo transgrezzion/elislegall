@@ -1,257 +1,36 @@
-index. Eli’s Legal Enterprise 🇰🇪
- Premier Legal Intelligence & Research Hub
-
-Welcome to the official repository for **Eli’s Legal Enterprise**. This platform is dedicated to analyzing the Kenyan legal atmosphere, providing "Smart Briefs" on core legislation, and offering resources for civil litigation and succession matters.
-
-⚖️ Core Focus Areas
-Civil Procedure:** In-depth analysis of the Civil Procedure Act (Cap 21) and the "Overriding Objective."
-Land Law:** Intelligence entries on the Land Registration Act (2012), focusing on Section 79 (Rectification).
-Succession Law:** Practical guides for Intestacy and obtaining Grants of Representation.
-Jurisdiction Guides:** Updated pecuniary limits for Kenyan Magistrates and Superior Courts.
-
-Technical Stack
-* **Hosting:** GitHub Pages
-* **Format:** Static HTML5 / CSS3
-* **Compliance:** Integrated Data Privacy notices following the Kenya Data Protection Act (2019).
-
- 📂 Repository Structure
-* `index.html`: The main landing page and Client Portal.
-* `kenya-court-jurisdiction.html`: A printable legal brief on the court hierarchy.
-* `assets/`: (Planned) Storage for legal templates and PDF resources.
-
-## ⚠️ Legal Disclaimer
-The contents of this repository are for **informational and research purposes only**. Accessing this data or using the provided templates does not establish an advocate-client relationship. Please refer to our full disclaimer on the live site regarding "Intermeddling" under Section 45 of the Succession Act.
-
----
-**Maintained by:** edwin / Eli's Legal Enterprise  
-**Location:** Kitengela, Kajiado County, Kenya  
-**Established:** 2026
-<section id="services" style="padding: 20px; font-family: sans-serif;">
-    <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Our Services</h2>
-
-    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-       <style>
-  /* 1. Black and Blue Background */
-  body {
-    margin: 0;
-    font-family: baskerville, sans-serif;
-    background: linear-gradient(135deg, #000000 0%, #001f3f 50%, #003366 100%);
-    color: white; /* Make sure all text is white for contrast */
-    height: 100vh; /* Ensures full page height coverage */
-    display: flex;
-    flex-direction: column;
-  }
-</style> <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eli's Legal Enterprise | Intelligence & Consultancy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-navy: #0F172A;
-            --accent-gold: #947436; /* Professional bronze/gold accent */
-            --bg-light: #FFFFFF;
-            --text-gray: #334155;
-            --border-color: #E2E8F0;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-gray);
-            line-height: 1.6;
-        }
-
-        /* Clean Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 10%;
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--primary-navy);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .nav-links a {
-            margin-left: 2rem;
-            text-decoration: none;
-            color: var(--text-gray);
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        /* Hero Section - High Contrast */
-        .hero {
-            padding: 100px 10%;
-            background-color: var(--primary-navy);
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            color: #CBD5E1;
-        }
-
-        /* Service Cards - Minimalist */
-        .services-container {
-            padding: 80px 10%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            padding: 40px;
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s, box-shadow 0.3s;
-            background: white;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            border-color: var(--accent-gold);
-        }
-
-        .service-card h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-navy);
-            margin-bottom: 1rem;
-        }
-
-        /* Call to Action Button */
-        .cta-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--accent-gold);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 2px; /* Square edges look more formal */
-            transition: opacity 0.3s;
-        }
-
-        .cta-button:hover {
-            opacity: 0.9;
-        }
-
-        footer {
-            background: #F8FAFC;
-            padding: 50px 10%;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 0.85rem;
-        }
-    </style>
-</head>
-<body>
-
-<nav>
-    <div class="logo">Eli's Legal Enterprise</div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Intelligence Services</a>
-        <a href="#portal">Document Portal</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<section class="hero">
-    <h1>Legal Intelligence. Refined.</h1>
-    <p>Strategic paralegal consultancy specializing in Kenyan Civil Litigation, Land Law, and Succession matters.</p>
-    <a href="#portal" class="cta-button">Access Document Portal</a>
-</section>
-
-<section class="services-container" id="services">
-    <div class="service-card">
-        <h3>Civil Litigation Support</h3>
-        <p>Specialized assistance in drafting plaints, affidavits, and submissions for the Small Claims and High Court.</p>
-    </div>
-    <div class="service-card">
-        <h3>Property & Land Law</h3>
-        <p>Expert guidance on the Land Registration Act and Environmental & Land Court procedures.</p>
-    </div>
-    <div class="service-card">
-        <h3>Corporate Intelligence</h3>
-        <p>Legal research briefs and compliance audits tailored for small-to-medium enterprises in Kenya.</p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2026 Eli's Legal Enterprise. All Rights Reserved. <br> 
-    Professional Paralegal Consultancy - Not a Law Firm.</p>
-</footer>
-
-</body>
-</html>
-       
-       Now</button>
-        </div>
-
-        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 300px; box-shadow: 2px 2px 10px #eee;">
-            <h3>Precedent Research</h3>
-            <p>Request a customized report of Kenyan case law relevant to your specific dispute.</p>
-            <p><strong>From KES 3,000</strong></p>
-            <button style="background: #2980b9; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Request Report</button>
-        </div>
-
-    </div>
-</section>
-<section id="services" style="max-width: 1050px; margin: 40px auto; padding: 30px; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f9f9f9; border-radius: 10px;">
+    <title>Eli’s Legal Enterprise | Premier Legal Intelligence</title>
     
-    <div style= <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eli's Legal Enterprise | Intelligence & Consultancy</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --primary-navy: #0F172A;
-            --accent-gold: #947436; /* Professional bronze/gold accent */
+            --accent-gold: #947436;
             --bg-light: #FFFFFF;
-            --text-gray: #334155;
+            --text-dark: #1E293B;
+            --text-muted: #475569;
             --border-color: #E2E8F0;
         }
 
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-gray);
-            line-height: 1.6;
+            padding: 0;
         }
 
-        /* Clean Navigation */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Navigation */
         nav {
             display: flex;
             justify-content: space-between;
@@ -266,7 +45,7 @@ The contents of this repository are for **informational and research purposes on
 
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--primary-navy);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -275,9 +54,10 @@ The contents of this repository are for **informational and research purposes on
         .nav-links a {
             margin-left: 2rem;
             text-decoration: none;
-            color: var(--text-gray);
+            color: var(--text-dark);
             font-weight: 500;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
             transition: color 0.3s;
         }
 
@@ -285,7 +65,7 @@ The contents of this repository are for **informational and research purposes on
             color: var(--accent-gold);
         }
 
-        /* Hero Section - High Contrast */
+        /* Hero Section */
         .hero {
             padding: 100px 10%;
             background-color: var(--primary-navy);
@@ -295,66 +75,106 @@ The contents of this repository are for **informational and research purposes on
 
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            color: #CBD5E1;
-        }
-
-        /* Service Cards - Minimalist */
-        .services-container {
-            padding: 80px 10%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            padding: 40px;
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s, box-shadow 0.3s;
-            background: white;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            border-color: var(--accent-gold);
-        }
-
-        .service-card h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-navy);
+            font-size: 3.2rem;
             margin-bottom: 1rem;
         }
 
-        /* Call to Action Button */
+        .hero .subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.15rem;
+            color: #CBD5E1;
+        }
+
+        /* Core Focus Areas - The Litigation Look */
+        .focus-section {
+            padding: 80px 10%;
+            background: #fff;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-navy);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .focus-card {
+            padding: 20px;
+            border-left: 3px solid var(--accent-gold);
+            background: #F8FAFC;
+            transition: all 0.3s ease;
+        }
+
+        .focus-card:hover {
+            background: #F1F5F9;
+            transform: translateX(5px);
+        }
+
+        .focus-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-navy);
+        }
+
+        .focus-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Button Style */
         .cta-button {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 14px 35px;
             background-color: var(--accent-gold);
             color: white;
             text-decoration: none;
             font-weight: 600;
-            border-radius: 2px; /* Square edges look more formal */
-            transition: opacity 0.3s;
+            letter-spacing: 1px;
+            transition: background 0.3s;
         }
 
         .cta-button:hover {
-            opacity: 0.9;
+            background-color: #7A5F2B;
         }
 
-        footer {
-            background: #F8FAFC;
-            padding: 50px 10%;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
+        /* Disclaimer Footer */
+        .disclaimer-strip {
+            background: #111827;
+            color: #94A3B8;
+            padding: 40px 10%;
             font-size: 0.85rem;
+            text-align: center;
+            border-top: 4px solid var(--accent-gold);
+        }
+
+        .footer-info {
+            margin-top: 20px;
+            font-weight: 600;
+            color: #F8FAFC;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; }
         }
     </style>
 </head>
@@ -363,81 +183,25 @@ The contents of this repository are for **informational and research purposes on
 <nav>
     <div class="logo">Eli's Legal Enterprise</div>
     <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Intelligence Services</a>
-        <a href="#portal">Document Portal</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">Intelligence</a>
+        <a href="#focus">Focus Areas</a>
+        <a href="#portal">Client Portal</a>
     </div>
 </nav>
 
-<section class="hero">
+<section class="hero" id="about">
+    <span class="subtitle">Kitengela, Kajiado County</span>
     <h1>Legal Intelligence. Refined.</h1>
-    <p>Strategic paralegal consultancy specializing in Kenyan Civil Litigation, Land Law, and Succession matters.</p>
-    <a href="#portal" class="cta-button">Access Document Portal</a>
-</section>
-
-<section class="services-container" id="services">
-    <div class="service-card">
-        <h3>Civil Litigation Support</h3>
-        <p>Specialized assistance in drafting plaints, affidavits, and submissions for the Small Claims and High Court.</p>
-    </div>
-    <div class="service-card">
-        <h3>Property & Land Law</h3>
-        <p>Expert guidance on the Land Registration Act and Environmental & Land Court procedures.</p>
-    </div>
-    <div class="service-card">
-        <h3>Corporate Intelligence</h3>
-        <p>Legal research briefs and compliance audits tailored for small-to-medium enterprises in Kenya.</p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2026 Eli's Legal Enterprise. All Rights Reserved. <br> 
-    Professional Paralegal Consultancy - Not a Law Firm.</p>
-</footer>
-
-</body>
-</html>"text-align: center; margin-bottom: 40px;">
-        <h2 style="color: #1a2a6c; text-transform: uppercase; letter-spacing: 1px;">Support & Service Orders</h2>
-        <p style="color: #444; max-width: 700px; margin: 10px auto; line-height: 1.6;">
-            Use the details below to <strong>support the platform</strong> or to <strong>order for a legal document, research report, template, or specific forms</strong>. You can also reach out to ask for a certain specific service tailored to your needs.
-        </p>
-    </div>
-
-    <div style="display: flex; gap: 25px; justify-content: center; flex-wrap: wrap;">
-        
-        <div style="background: white; border: 1px solid #e0e0e0; border-top: 6px solid #b8860b; padding: 30px; border-radius: 8px; width: 100%; max-width: 500px; box-shadow: 0 6px 12px rgba(0,0,0,0.05); text-align: center;">
-            <h3 style="color: #1a2a6c; margin-top: 0;">M-PESA PAYMENT DETAILS</h3>
-            <div style="background: #e8f4fd; padding: 20px; border-radius: 5px; margin: 20px 0;">
-                <span style="display: block; font-size: 0.9em; color: #555; margin-bottom: 5px;">Send to Phone / Buy Goods:</span>
-                <span style="font-size: 1.8em; font-weight: bold; color: #1a2a6c; letter-spacing: 1px;">+254 790 004 418</span>
-            </div>
-            
-            <p style="font-size: 0.95em; color: #333; line-height: 1.5;">
-                After payment, please send the M-Pesa confirmation message along with your specific request (Template name, Research topic, or Service inquiry) via WhatsApp or SMS to the same number.
-            </p>
-
-            <div style="margin-top: 25px; display: flex; gap: 10px; justify-content: center;">
-                <a href="https://wa.me/254790004418" style="background: #25D366; color: white; text-decoration: none; padding: 12px 20px; border-radius: 5px; font-weight: bold; flex: 1;">WhatsApp Request</a>
-                <a href="tel:+254790004418" style="background: #1a2a6c; color: white; text-decoration: none; padding: 12px 20px; border-radius: 5px; font-weight: bold; flex: 1;">Call / SMS</a>
-            </div>
-        </div>
-
-    </div>
-
-    <p style="margin-top: 40px; font-size: 0.8em; color: #777; text-align: center; border-top: 1px solid #ddd; padding-top: 20px;">
-        <strong>Disclaimer:</strong> Eli's Legal Enterprise is a legal intelligence platform operated by a professional paralegal. We provide administrative support, document drafting, and research information. We do not provide legal advice or Advocate-level representation.
+    <p>
+        A premier research hub dedicated to analyzing the Kenyan legal atmosphere. 
+        We provide strategic intelligence on core legislation, civil litigation, and succession matters.
     </p>
+    <a href="#portal" class="cta-button">Access Intelligence Portal</a>
 </section>
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/[YOUR-UNIQUE-ID]/default'; // They give you this
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
-</body>
+
+<section class="focus-section" id="focus">
+    <h2 class="section-title">Core Focus Areas</h2>
+    <div class="grid-container">
+        
+        <div class="focus-card">
+            <h3>Civil Procedure</h3>
