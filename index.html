@@ -3,246 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eli’s Legal Enterprise | Legal Intelligence. Refined.</title>
-    <style>
-        :root {
-            --primary-navy: #1a2a6c;
-            --accent-gold: #c5a059;
-            --light-grey: #f4f4f4;
-            --text-dark: #333;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: var(--text-dark);
-            scroll-behavior: smooth;
-        }
-
-        header {
-            background: var(--white);
-            padding: 1.5rem 5%;
-            border-bottom: 3px solid var(--primary-navy);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .brand-name {
-            font-size: 1.8rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin: 0;
-            color: var(--primary-navy);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-left: 20px;
-            text-transform: uppercase;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(26, 42, 108, 0.8), rgba(26, 42, 108, 0.8)), 
-                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 8rem 10%;
-            text-align: center;
-        }
-
-        .hero h2 { font-size: 3rem; margin-bottom: 1rem; }
-
-        .content-section {
-            padding: 4rem 10%;
-            background: var(--white);
-        }
-
-        .article-card {
-            background: var(--white);
-            border: 1px solid #ddd;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-left: 5px solid var(--accent-gold);
-        }
-
-        .article-card h3 { color: var(--primary-navy); margin-top: 0; }
-        
-        .sources-footer {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid var(--accent-gold);
-            font-size: 0.85rem;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .functions {
-            padding: 4rem 10%;
-            text-align: center;
-            background: var(--light-grey);
-        }
-
-        .functions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .func-item h4 {
-            color: var(--primary-navy);
-            border-bottom: 2px solid var(--accent-gold);
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .portal-cta {
-            background: var(--primary-navy);
-            color: white;
-            padding: 5rem 5%;
-            text-align: center;
-        }
-
-        .btn {
-            background: var(--accent-gold);
-            color: white;
-            padding: 1rem 3rem;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
-        .btn:hover { background: #b08d4a; transform: translateY(-2px); }
-
-        footer {
-            background: #111;
-            color: #ccc;
-            padding: 4rem 5% 2rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-        }
-
-        .footer-section h3 {
-            color: var(--accent-gold);
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        .footer-section p, .footer-section a {
-            color: #ccc;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-        }
-
-        .footer-section a:hover { color: var(--accent-gold); }
-
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #333;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            font-size: 0.8rem;
-        }
-    </style>
-</head>
+    <title>The Formation of the Kenyan Constitution | Eli's Legal Enterprise</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
 
     <header>
-        <a href="#" class="brand-name">Eli’s Legal Enterprise</a>
+        <h1>Eli's Legal Enterprise</h1>
         <nav>
-            <a href="#research">Research</a>
-            <a href="#functions">Functions</a>
-            <a href="#portal">Portal</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Home</a> | <a href="research.html">Legal Research</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <p style="text-transform: uppercase; letter-spacing: 4px; color: var(--accent-gold); font-weight: bold;">Kitengela, Kajiado County</p>
-        <h2>Legal Intelligence. Refined.</h2>
-        <p>A premier research hub dedicated to analyzing the Kenyan legal atmosphere.</p>
-    </section>
+    <main>
+        <article class="legal-publication">
+            <header class="article-header">
+                <h1>The Formation of the Kenyan Constitution: A Structural Analysis</h1>
+                <p class="author">By Osiris | Legal Intelligence Division</p>
+                <hr>
+            </header>
 
-    <section id="research" class="content-section">
-        <h2 style="color: var(--primary-navy); text-align: center;">Legal Research & Analysis</h2>
-        
-        <article class="article-card">
-            <h3>The Formation of the Constitution of Kenya 2010</h3>
-            <p>The journey toward the 2010 Constitution was a decades-long struggle for reform. It began with the <strong>Bomas Draft (2004)</strong>, which proposed a powerful Prime Minister and a four-tier devolution system. This was followed by the <strong>Wako Draft (2005)</strong>, which was famously rejected in the 'Orange vs Banana' referendum due to concerns over executive power.</p>
-            <p>The process eventually culminated in the <strong>2010 Promulgation</strong>, which settled on a pure Presidential system checked by a bicameral parliament and 47 County Governments. This shift established Constitutional Supremacy and specialized courts like the ELC.</p>
-            
-            <div class="sources-footer">
-                <strong>Sources relied upon:</strong><br>
-                • Constitution of Kenya (2010); Proposed New Constitution (Wako Draft, 2005); Draft Constitution (Bomas Draft, 2004).<br>
-                • CKRC Final Report (2005); Committee of Experts (CoE) Harmonized Records (2010).<br>
-                • Case Law: <em>In the Matter of the IIEC (2011)</em>; <em>Republic v Council of County Governors (2014)</em>.
-            </div>
+            <section class="introduction">
+                <p>
+                    The constitutional journey of Kenya is a testament to the nation's quest for 
+                    sovereignty, justice, and democratic governance. From the independence 
+                    constitution of 1963 to the transformative 2010 framework, the formation 
+                    process reflects the evolving needs of the Kenyan people.
+                </p>
+            </section>
+
+            <section class="body-content">
+                <h2>The Constitutional Framework</h2>
+                <p>
+                    A constitution serves as the supreme law of the Republic. Under the 
+                    current Kenyan legal system, any formation or significant amendment 
+                    is governed strictly by <strong>Chapter 16</strong> of the Constitution.
+                </p>
+
+                <h3>Key Pillars of Formation</h3>
+                <ul>
+                    <li><strong>Sovereignty of the People:</strong> All political power belongs to the people of Kenya.</li>
+                    <li><strong>The Supremacy of the Constitution:</strong> Any law inconsistent with the Constitution is void to the extent of the inconsistency.</li>
+                    <li><strong>Devolved Government:</strong> The distribution of power between the National Government and the 47 County Governments.</li>
+                </ul>
+            </section>
+
+            <section class="amendment-process">
+                <h2>The Process of Reform</h2>
+                <p>
+                    Whether through a Parliamentary Initiative or a Popular Initiative, the formation of 
+                    new constitutional clauses requires rigorous public participation and, in specific 
+                    cases, a national referendum.
+                </p>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Eli's Legal Enterprise. All Rights Reserved.</p>
+            </footer>
         </article>
-    </section>
-
-    <section id="functions" class="functions">
-        <h2 style="color: var(--primary-navy);">Core Enterprise Functions</h2>
-        <div class="functions-grid">
-            <div class="func-item"><h4>Legal Auditing</h4><p>Review of legal risks and compliance.</p></div>
-            <div class="func-item"><h4>Strategic Drafting</h4><p>Precision pleadings and submissions.</p></div>
-            <div class="func-item"><h4>Case Intelligence</h4><p>Insights into judicial precedents.</p></div>
-            <div class="func-item"><h4>Statutory Research</h4><p>Analysis of legislative shifts.</p></div>
-        </div>
-    </section>
-
-    <section id="portal" class="portal-cta">
-        <h2>Intelligence Portal</h2>
-        <p>Access our proprietary database of legal research and tactical analysis.</p>
-        <a href="#" class="btn">ACCESS CLIENT PORTAL</a>
-    </section>
-
-    <footer id="contact">
-        <div class="footer-grid">
-            <div class="footer-section">
-                <h3>Location</h3>
-                <p>Kitengela Business District</p>
-                <p>Kajiado County, Kenya</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Details</h3>
-                <a href="mailto:elilegal@gmail.com">elilegal@gmail.com</a>
-                <a href="tel:+254790004418">+254 790 004 418</a>
-                <p>Hours: Mon - Fri, 8:00 AM - 5:00 PM</p>
-            </div>
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <a href="#">Bomas Draft PDF</a>
-                <a href="#">COK 2010 Gazette</a>
-                <a href="#">ELC Procedure Rules</a>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2026 Eli’s Legal Enterprise. All Rights Reserved. <br>
-            Legal Research & Strategic Intelligence | Kenya
-        </div>
-    </footer>
+    </main>
 
 </body>
 </html>
