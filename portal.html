@@ -6,7 +6,7 @@
     
     <!-- SEO: Instruct Google NOT to index this specific page to keep it private -->
     <meta name="robots" content="noindex, nofollow">
-    <title>Client Intelligence Portal | Eli’s Legal Enterprise</title>
+    <title>Intelligence Portal | Eli’s Legal Enterprise</title>
 
     <style>
         :root {
@@ -16,6 +16,7 @@
             --text-dark: #333;
             --white: #ffffff;
             --success-green: #27ae60;
+            --danger-red: #d9534f;
         }
 
         body {
@@ -46,13 +47,13 @@
         .portal-header {
             background: var(--primary-navy);
             color: white;
-            padding: 3rem 10%;
+            padding: 3.5rem 10%;
             text-align: center;
         }
 
         .portal-header h2 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.2rem;
             letter-spacing: 1px;
         }
 
@@ -65,15 +66,24 @@
         }
 
         .main-container {
-            padding: 4rem 10%;
+            padding: 3rem 10% 5rem;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        h2.section-title {
+            color: var(--primary-navy);
+            border-bottom: 2px solid var(--accent-gold);
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding-bottom: 5px;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            margin-bottom: 4rem;
         }
 
         .card {
@@ -84,6 +94,13 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
+        }
+
+        /* PREMIUM STYLING */
+        .card.premium {
+            border: 2px solid var(--accent-gold);
+            background: #fffdf9;
         }
 
         .card h3 {
@@ -94,14 +111,22 @@
 
         .status-badge {
             display: inline-block;
-            background: #e8f5e9;
-            color: var(--success-green);
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 0.75rem;
             font-weight: bold;
             margin-bottom: 1rem;
             text-transform: uppercase;
+        }
+
+        .status-secure { background: #e8f5e9; color: var(--success-green); }
+        .status-locked { background: #fdeaea; color: var(--danger-red); }
+
+        .price-tag {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-navy);
+            margin: 10px 0;
         }
 
         .btn-access {
@@ -119,8 +144,22 @@
             background: var(--accent-gold);
         }
 
+        .btn-unlock {
+            background: var(--accent-gold);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn-unlock:hover {
+            background: #b08d4a;
+        }
+
         .security-notice {
-            margin-top: 3rem;
             background: #fff3cd;
             border: 1px solid #ffeeba;
             padding: 1.5rem;
@@ -153,46 +192,75 @@
 
     <div class="portal-header">
         <h2>Intelligence Portal</h2>
-        <p>Secure Client Access & Document Repository</p>
+        <p>Secure Client Access & Premium Research Repository</p>
     </div>
 
     <main class="main-container">
+        
+        <!-- SECTION 1: CLIENT SERVICES -->
+        <h2 class="section-title">Client Case Management</h2>
         <div class="grid">
-            
-            <!-- Card 1: Document Access -->
             <div class="card">
                 <div>
-                    <span class="status-badge">Secure Access</span>
+                    <span class="status-badge status-secure">Secure Vault</span>
                     <h3>Private Case Folders</h3>
                     <p>Access your shared research briefs, drafted pleadings, and evidence repositories via our encrypted drive.</p>
                 </div>
                 <a href="YOUR_SECURE_STORAGE_LINK" class="btn-access">Open Document Vault</a>
             </div>
 
-            <!-- Card 2: Research Updates -->
             <div class="card">
                 <div>
-                    <span class="status-badge">Updates</span>
-                    <h3>Case Intelligence Updates</h3>
+                    <span class="status-badge status-secure">Updates</span>
+                    <h3>Case Intelligence</h3>
                     <p>View the latest judicial precedents and statutory shifts relevant to your active matters.</p>
                 </div>
                 <a href="kenya-court-jurisdiction.html" class="btn-access">View Research Hub</a>
             </div>
+        </div>
 
-            <!-- Card 3: Direct Inquiry -->
-            <div class="card">
+        <!-- SECTION 2: PREMIUM RESEARCH (LOCKED) -->
+        <h2 class="section-title">Premium Legal Intelligence</h2>
+        <p style="margin-bottom: 2rem;">Proprietary research and tactical legal manuals available for purchase.</p>
+        
+        <div class="grid">
+            <!-- PREMIUM DOC 1 -->
+            <div class="card premium">
                 <div>
-                    <span class="status-badge">Communication</span>
-                    <h3>Direct Case Inquiry</h3>
-                    <p>Request a specific research brief or submit new documentation for auditing.</p>
+                    <span class="status-badge status-locked">Locked Content</span>
+                    <h3>Civil Procedure Tactical Manual</h3>
+                    <p>A comprehensive guide to Chamber Summons and Replying Affidavits within the Environment and Land Court.</p>
+                    <p class="price-tag">KES 1,500</p>
                 </div>
-                <a href="mailto:elilislegal@gmail.com?subject=Portal%20Inquiry" class="btn-access">Message Lead Researcher</a>
+                <!-- Link to WhatsApp with a pre-filled message -->
+                <a href="https://wa.me/254790004418?text=I%20wish%20to%20purchase%20the%20Civil%20Procedure%20Manual" class="btn-unlock">Unlock Access</a>
             </div>
 
+            <!-- PREMIUM DOC 2 -->
+            <div class="card premium">
+                <div>
+                    <span class="status-badge status-locked">Locked Content</span>
+                    <h3>Succession & Probate Strategy</h3>
+                    <p>Detailed analysis of the Law of Succession Act and navigating complex family property disputes.</p>
+                    <p class="price-tag">KES 2,000</p>
+                </div>
+                <a href="https://wa.me/254790004418?text=I%20wish%20to%20purchase%20the%20Succession%20Strategy%20Manual" class="btn-unlock">Unlock Access</a>
+            </div>
+
+            <!-- PREMIUM DOC 3 -->
+            <div class="card premium">
+                <div>
+                    <span class="status-badge status-locked">Locked Content</span>
+                    <h3>The 2010 Constitution: Deep Dive</h3>
+                    <p>Advanced legal analysis of the implementation of the Bill of Rights and Devolution logic.</p>
+                    <p class="price-tag">KES 1,200</p>
+                </div>
+                <a href="https://wa.me/254790004418?text=I%20wish%20to%20purchase%20the%20Constitution%20Deep%20Dive" class="btn-unlock">Unlock Access</a>
+            </div>
         </div>
 
         <div class="security-notice">
-            <strong>Confidentiality Protocol:</strong> This portal is a gateway to privileged information. All documents are hosted on encrypted cloud servers. Do not share your unique access links with third parties. Legal research provided is for strategic intelligence purposes.
+            <strong>Confidentiality Protocol:</strong> Premium documents are single-user licenses. Unauthorized redistribution is prohibited. For bulk enterprise access, please message the Lead Researcher directly.
         </div>
     </main>
 
