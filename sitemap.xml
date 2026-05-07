@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <!-- Main Homepage -->
   <url>
     <loc>https://transgrezzion.github.io/elislegall/</loc>
@@ -7,4 +8,13 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Research Section / Blog -->
+  <url>
+    <loc>https://transgrezzion.github.io/elislegall/research.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
