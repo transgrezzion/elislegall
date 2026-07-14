@@ -16,16 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-        /* Eli's Legal Core Color Variables & Layout System */
+        /* Core Brand Color Alignment (Matching Portal & Palette) */
         :root {
-            --primary-navy: #0f172a;        /* Core Brand Navy */
-            --secondary-navy: #1e293b;      /* Lightened Slate Navy */
-            --accent-gold: #d4af37;         /* Deep Gold Accent */
+            --primary-navy: #1a2a6c;        /* Primary Deep Navy */
+            --secondary-navy: #1e293b;      /* Slate Grey Base */
+            --accent-gold: #c5a059;         /* Premium Brand Gold */
             --accent-gold-light: #f4ebd0;   /* Light Gold Tint */
-            --bg-light: #f8fafc;            /* Clean light background */
-            --text-dark: #1e293b;           /* Slate grey text */
-            --text-light: #ffffff;          /* Pure white text */
-            --border-color: #e2e8f0;        /* Subtle divider borders */
+            --bg-light: #f8fafc;            /* Light Body Base */
+            --text-dark: #333333;           /* Contrast Dark Body Text */
+            --text-light: #ffffff;          /* White Text */
+            --border-color: #e2e8f0;        /* Subtle Bordering */
             --font-sans: 'Inter', sans-serif;
             --font-serif: 'Playfair Display', serif;
         }
@@ -45,7 +45,7 @@
             overflow-x: hidden;
         }
 
-        /* Structural Container wrapper */
+        /* Structural Container Wrapper */
         .container {
             width: 100%;
             max-width: 1200px;
@@ -55,8 +55,8 @@
 
         /* 1. Brand Header & Navigation Layout */
         header {
-            background-color: var(--primary-navy);
-            border-bottom: 3px solid var(--accent-gold);
+            background-color: var(--text-light);
+            border-bottom: 3px solid var(--primary-navy);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -77,10 +77,12 @@
         }
 
         .logo-text {
-            font-family: var(--font-serif);
-            color: var(--text-light);
-            font-size: 1.5rem;
+            font-family: var(--font-sans);
+            color: var(--primary-navy);
+            font-size: 1.4rem;
             font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .logo-text span {
@@ -94,10 +96,10 @@
         }
 
         nav a {
-            color: var(--text-light);
+            color: var(--primary-navy);
             text-decoration: none;
             font-size: 0.95rem;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.2s ease;
         }
 
@@ -106,23 +108,24 @@
         }
 
         .btn-portal {
-            background-color: transparent;
-            color: var(--accent-gold) !important;
-            border: 1.5px solid var(--accent-gold);
-            padding: 0.5rem 1.2rem;
+            background-color: var(--primary-navy);
+            color: var(--text-light) !important;
+            border: 1.5px solid var(--primary-navy);
+            padding: 0.6rem 1.4rem;
             border-radius: 4px;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.3s ease;
         }
 
         .btn-portal:hover {
             background-color: var(--accent-gold);
-            color: var(--primary-navy) !important;
+            border-color: var(--accent-gold);
+            color: var(--text-light) !important;
         }
 
         /* 2. Professional Hero Presentation */
         .hero {
-            background: linear-gradient(135deg, var(--primary-navy) 0%, #020617 100%);
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #0d1536 100%);
             padding: 6rem 0;
             color: var(--text-light);
             text-align: center;
@@ -150,17 +153,20 @@
 
         .hero-cta {
             background-color: var(--accent-gold);
-            color: var(--primary-navy);
+            color: var(--text-light);
             text-decoration: none;
             padding: 0.8rem 2rem;
-            font-weight: 600;
+            font-weight: 700;
             border-radius: 4px;
             display: inline-block;
             transition: background-color 0.2s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
         }
 
         .hero-cta:hover {
-            background-color: #b8962e;
+            background-color: #b08d4a;
         }
 
         /* 3. Main Sections Layout */
@@ -199,6 +205,9 @@
             border-top: 4px solid var(--accent-gold);
             padding: 2rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
@@ -222,6 +231,7 @@
         .card p {
             color: #64748b;
             font-size: 0.95rem;
+            margin-bottom: 1.5rem;
         }
 
         /* 4. Document Table Presentation */
@@ -244,7 +254,7 @@
             background-color: var(--primary-navy);
             color: var(--text-light);
             padding: 1rem 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.95rem;
         }
 
@@ -264,12 +274,13 @@
         }
 
         .doc-link {
-            color: var(--accent-gold);
+            color: var(--primary-navy);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .doc-link:hover {
+            color: var(--accent-gold);
             text-decoration: underline;
         }
 
@@ -313,7 +324,7 @@
         }
 
         .footer-bottom {
-            border-top: 1px solid var(--secondary-navy);
+            border-top: 1px solid #1e293b;
             padding-top: 2rem;
             text-align: center;
             font-size: 0.85rem;
@@ -355,7 +366,7 @@
             <nav>
                 <a href="#research">Research</a>
                 <a href="#functions">Services</a>
-                <a href="#documents">Library</a>
+                <a href="#documents">Public Library</a>
                 <a href="portal.html" class="btn-portal">Intelligence Portal</a>
             </nav>
         </div>
@@ -366,7 +377,7 @@
         <div class="container">
             <h1>Elite <span>Legal Intelligence</span> & Research</h1>
             <p>Advancing strategic litigation support, comprehensive constitutional analysis, and complex civil brief drafting. Grounded in Kitengela, serving the Kajiado County jurisdiction and beyond.</p>
-            <a href="#research" class="hero-cta">Explore the Database</a>
+            <a href="portal.html" class="hero-cta">Access Drafting Portal</a>
         </div>
     </main>
 
@@ -377,27 +388,30 @@
             <div class="grid">
                 
                 <article class="card">
-                    <div class="card-icon">📜</div>
-                    <h3>Constitutional Foundations</h3>
-                    <p>Analysis on the "Formation of the Constitution of Kenya 2010". Explores the structural balance of power, historical public participation milestones, and administrative evolution.</p>
-                    <br>
+                    <div>
+                        <div class="card-icon">📜</div>
+                        <h3>Constitutional Foundations</h3>
+                        <p>Analysis on the "Formation of the Constitution of Kenya 2010". Explores the structural balance of power, historical public participation milestones, and administrative evolution.</p>
+                    </div>
                     <a href="#documents" class="doc-link">Access Article &rarr;</a>
                 </article>
 
                 <article class="card">
-                    <div class="card-icon">🏛️</div>
-                    <h3>The Quiet Revolution</h3>
-                    <p>An in-depth perspective tracking modern judicial transitions, precedent shifts in land dispute matters, and administrative amendments within civil processes.</p>
-                    <br>
+                    <div>
+                        <div class="card-icon">🏛️</div>
+                        <h3>The Quiet Revolution</h3>
+                        <p>An in-depth perspective tracking modern judicial transitions, precedent shifts in land dispute matters, and administrative amendments within civil processes.</p>
+                    </div>
                     <a href="#documents" class="doc-link">Read Briefing &rarr;</a>
                 </article>
 
                 <article class="card">
-                    <div class="card-icon">⚖️</div>
-                    <h3>Land & Succession</h3>
-                    <p>Detailed toolkits on regional Land Registry actions, subdivisions, and the procedural frameworks governing succession applications across East Africa.</p>
-                    <br>
-                    <a href="#documents" class="doc-link">Review Toolkit &rarr;</a>
+                    <div>
+                        <div class="card-icon">⚖️</div>
+                        <h3>Land & Succession</h3>
+                        <p>Detailed toolkits on regional Land Registry actions, subdivisions, and the procedural frameworks governing succession applications across East Africa.</p>
+                    </div>
+                    <a href="portal.html" class="doc-link">Access Templates &rarr;</a>
                 </article>
 
             </div>
@@ -411,28 +425,34 @@
             <div class="grid">
                 
                 <div class="card">
-                    <div class="card-icon">🔍</div>
-                    <h3>Strategic Analysis</h3>
-                    <p>Conducting deep-dive legal intelligence audits, identifying pivotal statutory loopholes, and drafting bulletproof legal positions prior to court filing.</p>
+                    <div>
+                        <div class="card-icon">🔍</div>
+                        <h3>Strategic Analysis</h3>
+                        <p>Conducting deep-dive legal intelligence audits, identifying pivotal statutory loopholes, and drafting bulletproof legal positions prior to court filing.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon">🖊️</div>
-                    <h3>Legal Document Drafting</h3>
-                    <p>Drafting complex pleadings, customized plaints, Replying Affidavits, Chamber Summons, and strategic demands structured for high court defense.</p>
+                    <div>
+                        <div class="card-icon">🖊️</div>
+                        <h3>Legal Document Drafting</h3>
+                        <p>Drafting complex pleadings, customized plaints, Replying Affidavits, Chamber Summons, and strategic demands structured for high court defense.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon">📂</div>
-                    <h3>Case Management</h3>
-                    <p>Assisting advocates and legal entities with digital case tracking, e-Filing workflow monitoring, and chronological court file reconstructions.</p>
+                    <div>
+                        <div class="card-icon">📂</div>
+                        <h3>Case Management</h3>
+                        <p>Assisting advocates and legal entities with digital case tracking, e-Filing workflow monitoring, and chronological court file reconstructions.</p>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Documents & Resources Section (With updated exact paths to GitHub files) -->
+    <!-- Public Library & Reference Documents -->
     <section id="documents">
         <div class="container">
             <h2 class="section-title">Resource Library & Case Files</h2>
@@ -453,21 +473,21 @@
                             <td>The Formation of the Constitution of Kenya 2010</td>
                             <td>Constitutional Law</td>
                             <td>PDF Document</td>
-                            <!-- FIXED PATH to match constitution-formation-article.pdf -->
+                            <!-- Points to the repository files -->
                             <td><a href="documents/constitution-formation-article.pdf" class="doc-link" download>Download File</a></td>
                         </tr>
                         <tr>
                             <td>The Quiet Revolution (Modern Practice Briefing)</td>
                             <td>Litigation Intelligence</td>
                             <td>PDF Document</td>
-                            <!-- FIXED PATH with %20 spaces to match THE QUIET REVOLUTION IN KENYA.pdf -->
+                            <!-- Points to the repository files -->
                             <td><a href="documents/THE%20QUIET%20REVOLUTION%20IN%20KENYA.pdf" class="doc-link" download>Download File</a></td>
                         </tr>
                         <tr>
                             <td>Procedural Guide: Land Registry Adoptions (Ngong & Kajiado)</td>
                             <td>Conveyancing / Land Law</td>
                             <td>Strategic Manual</td>
-                            <!-- FIXED PATH to match research.pdf -->
+                            <!-- Points to the repository files -->
                             <td><a href="documents/research.pdf" class="doc-link" download>Download File</a></td>
                         </tr>
                     </tbody>
