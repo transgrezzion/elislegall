@@ -4,270 +4,505 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Eli’s Legal Enterprise | Legal Intelligence & Research Kenya</title>
-    <meta name="description" content="Eli's Legal Enterprise provides expert legal research, paralegal services, and strategic drafting in Kitengela, Kajiado. Specialized in Kenyan Civil Procedure and the 2010 Constitution.">
-    <meta name="keywords" content="Legal Intelligence Kenya, Paralegal Services Kitengela, Kenyan Law Research, Eli's Legal Enterprise, Kajiado Legal Hub, Constitution of Kenya 2010, Legal Drafting Kenya">
+    <!-- SEO Optimization -->
+    <title>Eli's Legal Enterprise | Legal Intelligence & Research Hub</title>
+    <meta name="description" content="Premier legal research, intelligence portals, and strategic documentation services in Kitengela, Kajiado County. Access high-level paralegal support and case analysis.">
+    <meta name="keywords" content="Eli's Legal Enterprise, legal intelligence, legal research Kenya, civil procedure, conveyancing, Kajiado, Kitengela, litigation support">
     <meta name="author" content="Eli's Legal Enterprise">
-
-    <meta property="og:title" content="Eli’s Legal Enterprise | Legal Intelligence. Refined.">
-    <meta property="og:description" content="Professional legal research hub dedicated to analyzing the Kenyan legal atmosphere. Based in Kitengela.">
-    <meta property="og:url" content="https://transgrezzion.github.io/elislegall/">
-    <meta property="og:type" content="website">
     
-    <link rel="canonical" href="https://transgrezzion.github.io/elislegall/">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
+        /* Eli's Legal Core Color Variables & Layout System */
         :root {
-            --primary-navy: #1a2a6c;
-            --accent-gold: #c5a059;
-            --light-grey: #f4f4f4;
-            --text-dark: #333;
-            --white: #ffffff;
+            --primary-navy: #0f172a;        /* Core Brand Navy */
+            --secondary-navy: #1e293b;      /* Lightened Slate Navy */
+            --accent-gold: #d4af37;         /* Deep Gold Accent */
+            --accent-gold-light: #f4ebd0;   /* Light Gold Tint */
+            --bg-light: #f8fafc;            /* Clean light background */
+            --text-dark: #1e293b;           /* Slate grey text */
+            --text-light: #ffffff;          /* Pure white text */
+            --border-color: #e2e8f0;        /* Subtle divider borders */
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        /* Basic Resets & Document Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
+            font-family: var(--font-sans);
+            background-color: var(--bg-light);
             color: var(--text-dark);
-            scroll-behavior: smooth;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        /* SEO Friendly visually hidden H1 */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
+        /* Structural Container wrapper */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
+        /* 1. Brand Header & Navigation Layout */
         header {
-            background: var(--white);
-            padding: 1.5rem 5%;
-            border-bottom: 3px solid var(--primary-navy);
+            background-color: var(--primary-navy);
+            border-bottom: 3px solid var(--accent-gold);
             position: sticky;
             top: 0;
             z-index: 1000;
+        }
+
+        header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 80px;
         }
 
-        .brand-name {
-            font-size: 1.8rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin: 0;
-            color: var(--primary-navy);
+        .logo {
             text-decoration: none;
-            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-text {
+            font-family: var(--font-serif);
+            color: var(--text-light);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-text span {
+            color: var(--accent-gold);
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
         }
 
         nav a {
+            color: var(--text-light);
             text-decoration: none;
-            color: var(--text-dark);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        .btn-portal {
+            background-color: transparent;
+            color: var(--accent-gold) !important;
+            border: 1.5px solid var(--accent-gold);
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
             font-weight: 600;
-            font-size: 0.85rem;
-            margin-left: 20px;
-            text-transform: uppercase;
+            transition: all 0.3s ease;
         }
 
+        .btn-portal:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy) !important;
+        }
+
+        /* 2. Professional Hero Presentation */
         .hero {
-            background: linear-gradient(rgba(26, 42, 108, 0.8), rgba(26, 42, 108, 0.8)), 
-                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 8rem 10%;
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #020617 100%);
+            padding: 6rem 0;
+            color: var(--text-light);
             text-align: center;
+            position: relative;
         }
 
-        .hero h2 { font-size: 3rem; margin-bottom: 1rem; }
-
-        .content-section {
-            padding: 4rem 10%;
-            background: var(--white);
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
         }
 
-        .article-card {
-            background: var(--white);
-            border: 1px solid #ddd;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-left: 5px solid var(--accent-gold);
+        .hero h1 span {
+            color: var(--accent-gold);
         }
 
-        .article-card h3 { color: var(--primary-navy); margin-top: 0; }
-        
-        .sources-footer {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid var(--accent-gold);
-            font-size: 0.85rem;
-            color: #666;
-            line-height: 1.8;
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            color: #94a3b8;
+            font-weight: 300;
         }
 
-        .functions {
-            padding: 4rem 10%;
+        .hero-cta {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .hero-cta:hover {
+            background-color: #b8962e;
+        }
+
+        /* 3. Main Sections Layout */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 2.25rem;
             text-align: center;
-            background: var(--light-grey);
+            margin-bottom: 3rem;
+            color: var(--primary-navy);
+            position: relative;
         }
 
-        .functions-grid {
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-gold);
+            margin: 0.75rem auto 0 auto;
+        }
+
+        /* Grid Layout for Cards */
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+        }
+
+        .card {
+            background: var(--text-light);
+            border-radius: 8px;
+            border-top: 4px solid var(--accent-gold);
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-icon {
+            color: var(--accent-gold);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-family: var(--font-serif);
+            margin-bottom: 1rem;
+            color: var(--primary-navy);
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        /* 4. Document Table Presentation */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            background: var(--text-light);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             margin-top: 2rem;
         }
 
-        .func-item h4 {
-            color: var(--primary-navy);
-            border-bottom: 2px solid var(--accent-gold);
-            display: inline-block;
-            padding-bottom: 5px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
         }
 
-        .portal-cta {
-            background: var(--primary-navy);
-            color: white;
-            padding: 5rem 5%;
-            text-align: center;
+        th {
+            background-color: var(--primary-navy);
+            color: var(--text-light);
+            padding: 1rem 1.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
         }
 
-        .btn {
-            background: var(--accent-gold);
-            color: white;
-            padding: 1rem 3rem;
+        td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background-color: #f1f5f9;
+        }
+
+        .doc-link {
+            color: var(--accent-gold);
             text-decoration: none;
-            display: inline-block;
-            margin-top: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: 0.3s;
+            font-weight: 600;
         }
 
-        .btn:hover { background: #b08d4a; transform: translateY(-2px); }
+        .doc-link:hover {
+            text-decoration: underline;
+        }
 
+        /* 5. Clean Footer Area */
         footer {
-            background: #111;
-            color: #ccc;
-            padding: 4rem 5% 2rem;
+            background-color: var(--primary-navy);
+            color: #94a3b8;
+            padding: 4rem 0 2rem 0;
+            border-top: 3px solid var(--accent-gold);
+            font-size: 0.9rem;
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
+            gap: 2rem;
+            margin-bottom: 3rem;
         }
 
-        .footer-section h3 {
-            color: var(--accent-gold);
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
+        .footer-col h4 {
+            color: var(--text-light);
+            font-family: var(--font-serif);
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
         }
 
-        .footer-section p, .footer-section a {
-            color: #ccc;
+        .footer-col p {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col a {
+            color: #94a3b8;
             text-decoration: none;
             display: block;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s ease;
         }
 
-        .footer-section a:hover { color: var(--accent-gold); }
+        .footer-col a:hover {
+            color: var(--accent-gold);
+        }
 
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #333;
-            margin-top: 3rem;
+        .footer-bottom {
+            border-top: 1px solid var(--secondary-navy);
             padding-top: 2rem;
-            font-size: 0.8rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive Design Rules */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1 class="sr-only">Eli’s Legal Enterprise: Premier Legal Research & Intelligence Hub Kenya</h1>
-
+    <!-- Main Navigation Bar -->
     <header>
-        <a href="index.html" class="brand-name">Eli’s Legal Enterprise</a>
-        <nav aria-label="Main Navigation">
-            <a href="#research">Research</a>
-            <a href="#functions">Functions</a>
-            <a href="#portal">Portal</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-text">Eli's <span>Legal Enterprise</span></div>
+            </a>
+            <nav>
+                <a href="#research">Research</a>
+                <a href="#functions">Services</a>
+                <a href="#documents">Library</a>
+                <a href="portal.html" class="btn-portal">Intelligence Portal</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero" aria-label="Welcome">
-            <p style="text-transform: uppercase; letter-spacing: 4px; color: var(--accent-gold); font-weight: bold;">Kitengela, Kajiado County</p>
-            <h2>Legal Intelligence. Refined.</h2>
-            <p>A premier research hub dedicated to analyzing the Kenyan legal atmosphere.</p>
-        </section>
-
-        <section id="research" class="content-section">
-            <h2 style="color: var(--primary-navy); text-align: center;">Legal Research & Analysis</h2>
-            
-            <article class="article-card">
-                <h3>The Formation of the Constitution of Kenya 2010</h3>
-                <p>The journey toward the 2010 Constitution was a decades-long struggle for reform. It began with the <strong>Bomas Draft (2004)</strong>, which proposed a powerful Prime Minister and a four-tier devolution system. This was followed by the <strong>Wako Draft (2005)</strong>, which was famously rejected in the 'Orange vs Banana' referendum due to concerns over executive power.</p>
-                <p>The process eventually culminated in the <strong>2010 Promulgation</strong>, which settled on a pure Presidential system checked by a bicameral parliament and 47 County Governments. This shift established Constitutional Supremacy and specialized courts like the ELC.</p>
-                
-                <div class="sources-footer">
-                    <strong>Sources relied upon:</strong><br>
-                    • Constitution of Kenya (2010); Proposed New Constitution (Wako Draft, 2005); Draft Constitution (Bomas Draft, 2004).<br>
-                    • CKRC Final Report (2005); Committee of Experts (CoE) Harmonized Records (2010).<br>
-                    • Case Law: <em>In the Matter of the IIEC (2011)</em>; <em>Republic v Council of County Governors (2014)</em>.
-                </div>
-            </article>
-        </section>
-
-        <section id="functions" class="functions">
-            <h2 style="color: var(--primary-navy);">Core Enterprise Functions</h2>
-            <div class="functions-grid">
-                <div class="func-item"><h4>Legal Auditing</h4><p>Review of legal risks and compliance.</p></div>
-                <div class="func-item"><h4>Strategic Drafting</h4><p>Precision pleadings and submissions.</p></div>
-                <div class="func-item"><h4>Case Intelligence</h4><p>Insights into judicial precedents.</p></div>
-                <div class="func-item"><h4>Statutory Research</h4><p>Analysis of legislative shifts.</p></div>
-            </div>
-        </section>
-
-        <section id="portal" class="portal-cta">
-            <h2>Intelligence Portal</h2>
-            <p>Access our proprietary database of legal research and tactical analysis.</p>
-            <a href="portal.html" class="btn" title="Access Client Portal">ACCESS CLIENT PORTAL</a>
-        </section>
+    <!-- Professional Hero Banner -->
+    <main class="hero">
+        <div class="container">
+            <h1>Elite <span>Legal Intelligence</span> & Research</h1>
+            <p>Advancing strategic litigation support, comprehensive constitutional analysis, and complex civil brief drafting. Grounded in Kitengela, serving the Kajiado County jurisdiction and beyond.</p>
+            <a href="#research" class="hero-cta">Explore the Database</a>
+        </div>
     </main>
 
-    <footer id="contact">
-        <div class="footer-grid">
-            <div class="footer-section">
-                <h3>Location</h3>
-                <p>Kitengela Business District</p>
-                <p>Kajiado County, Kenya</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Details</h3>
-                <a href="mailto:elilislegal@gmail.com">elilislegal@gmail.com</a>
-                <a href="tel:+254790004418" title="Call us">+254 790 004 418</a>
-                <p>Hours: Mon - Fri, 8:00 AM - 5:00 PM</p>
-            </div>
-            <div class="footer-section">
-                <h3>Full Resources</h3>
-                <a href="documents/constitution-formation-article.pdf" target="_blank" title="Download Constitution Article PDF">Formation of COK 2010 (Article)</a>
+    <!-- Main Content Section: Legal Research Articles -->
+    <section id="research">
+        <div class="container">
+            <h2 class="section-title">Legal Intelligence & Analysis</h2>
+            <div class="grid">
+                
+                <article class="card">
+                    <div class="card-icon">📜</div>
+                    <h3>Constitutional Foundations</h3>
+                    <p>Analysis on the "Formation of the Constitution of Kenya 2010". Explores the structural balance of power, historical public participation milestones, and administrative evolution.</p>
+                    <br>
+                    <a href="#documents" class="doc-link">Access Article &rarr;</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>The Quiet Revolution</h3>
+                    <p>An in-depth perspective tracking modern judicial transitions, precedent shifts in land dispute matters, and administrative amendments within civil processes.</p>
+                    <br>
+                    <a href="#documents" class="doc-link">Read Briefing &rarr;</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">⚖️</div>
+                    <h3>Land & Succession</h3>
+                    <p>Detailed toolkits on regional Land Registry actions, subdivisions, and the procedural frameworks governing succession applications across East Africa.</p>
+                    <br>
+                    <a href="#documents" class="doc-link">Review Toolkit &rarr;</a>
+                </article>
+
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Eli’s Legal Enterprise. All Rights Reserved. <br>
-            Legal Research & Strategic Intelligence | Kitengela, Kajiado, Kenya
+    </section>
+
+    <!-- Core Enterprise Functions Section -->
+    <section id="functions" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h2 class="section-title">Core Operations</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Strategic Analysis</h3>
+                    <p>Conducting deep-dive legal intelligence audits, identifying pivotal statutory loopholes, and drafting bulletproof legal positions prior to court filing.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🖊️</div>
+                    <h3>Legal Document Drafting</h3>
+                    <p>Drafting complex pleadings, customized plaints, Replying Affidavits, Chamber Summons, and strategic demands structured for high court defense.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📂</div>
+                    <h3>Case Management</h3>
+                    <p>Assisting advocates and legal entities with digital case tracking, e-Filing workflow monitoring, and chronological court file reconstructions.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents & Resources Section -->
+    <section id="documents">
+        <div class="container">
+            <h2 class="section-title">Resource Library & Case Files</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #64748b;">Review and download reference publications, frameworks, and academic papers.</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Document Title</th>
+                            <th>Category</th>
+                            <th>Format</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Formation of the Constitution of Kenya 2010</td>
+                            <td>Constitutional Law</td>
+                            <td>PDF Document</td>
+                            <td><a href="documents/constitution-formation-2010.pdf" class="doc-link">Download File</a></td>
+                        </tr>
+                        <tr>
+                            <td>The Quiet Revolution (Modern Practice Briefing)</td>
+                            <td>Litigation Intelligence</td>
+                            <td>PDF Document</td>
+                            <td><a href="documents/the-quiet-revolution.pdf" class="doc-link">Download File</a></td>
+                        </tr>
+                        <tr>
+                            <td>Procedural Guide: Land Registry Adoptions (Ngong & Kajiado)</td>
+                            <td>Conveyancing / Land Law</td>
+                            <td>Strategic Manual</td>
+                            <td><a href="documents/land-registry-guide.pdf" class="doc-link">Download File</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-col">
+                    <h4>Eli's Legal Enterprise</h4>
+                    <p>Advancing legal access, tactical briefing design, and professional support frameworks across East Africa.</p>
+                    <p><strong>Location:</strong> Kitengela, Kajiado County, Kenya</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Directory</h4>
+                    <a href="#research">Research Database</a>
+                    <a href="#functions">Enterprise Functions</a>
+                    <a href="#documents">Document Library</a>
+                    <a href="portal.html">Client Access Portal</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Support</h4>
+                    <p>Direct inquiries, brief requests, and paralegal tracking assistance:</p>
+                    <p><strong>Email:</strong> <a href="mailto:elilegal@gmail.com" style="display:inline; color:var(--accent-gold);">elilegal@gmail.com</a></p>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eli's Legal Enterprise. All Rights Reserved. Hosted via GitHub Pages.</p>
+            </div>
         </div>
     </footer>
 
